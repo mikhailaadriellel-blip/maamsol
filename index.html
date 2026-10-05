@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>HAPPY TEACHER'S DAY, MA'AM SOL!</title>
+<style>
+body {
+background-color: #799851;
+color: #799851;
+font-family: "Times New Roman", serif;
+text-align: center;
+margin: 0;
+padding: 0;
+}
+.page {
+min-height: 100vh;
+box-sizing: border-box;
+padding: 100px 25px;
+}
+h1 {
+font-size: 45px;
+margin-bottom: 25px;
+}
+p {
+font-size: 21px;
+line-height: 1.6;
+}
+.welcome-box {
+background-color: #47622A;
+max-width: 700px;
+padding: 50px 30px;
+margin: auto;
+border: 3px solid #374426;
+border-radius: 15px;
+}
+.welcome-box h1 {
+color: #799851;
+}
+.button {
+background-color: #799851;
+color: #47622A;
+padding: 15px 35px;
+border: none;
+border-radius: 8px;
+font-size: 20px;
+font-family: "Times New Roman:, serif;
+cursor: pointer;
+margin-top: 20px;
+}
+.button:hover {
+background-color:#374426;
+}
+#secondPage {
+display: none;
+}
+.letter {
+background-color: #47622A;
+color: #799851;
+max-width: 750px;
+margin: auto;
+padding: 45px;
+border: 3px solid #374426;
+border-radius: 15px;
+text-align: left;
+}
+.letter h2 {
+text-align: center;
+font-size: 32px;
+margin-bottom: 35px;
+}
+.letter p {
+font-size: 19px;
+line-height: 1.8;
+}
+.signature {
+margin-top: 30px;
+}
+.back-button {
+background-color: #799851;
+color: #374426;
+border: none;
+padding: 12px 25px;
+font-family: "Times New Roman", serif;
+font-size: 17px;
+border-radius: 8px;
+cursor: pointer;
+display: block;
+margin: 30px auto 0;
+}
+</style>
+</head>
+<body>
+<!-- FIRST PAGE-->
+<div id="firstPage" class="page">
+<div class="welcome-box">
+<h1>Hello, welcome ma'am Sol!</h1>
+<p>October 5, 2026</p>
+<p>Click the button below</p>
+<button class="button" onclick="openLetter()">
+Open your surprise
+</button>
+</div>
+</div>
+<!-- SECOND PAGE -->
+<div id="secondPage" class="page">
+<div class="letter">
+<h1>Happy Teacher's Day!</h1>
+
+<p>To our Ap subject teacher,</p>
+<p>Ma'am baka dumating ang araw na hindi niyo na maalala lahat ng students na tinuruan niyo, pero sana malaman niyo na sa amin, naging parte kayo isang chapter ng buhay namin na balang araw, gugustuhin naming balikan.</p>
+<p>Baka malimutan namin ang mga petsa, pangalan, at lessons na turo niyo, pero hindi 'ko makakalimutan ang guro na naging patient saamin, naniwala sa amin, at patuloy na nagturo kahit hindi kami perfect.</p>
+<p>Kung sakaling dumating ang araw na mapaisip kayo kung may naitulong ba kayo sa buhay ng mga studyante niyo, sana maalala niyo kami. Kasi oo ma'am, may naiwan po kayo saamin, we love u ma'am sol :)</p>
+<p>Happy Teacher's Day, ma'am!
+</p>
+<p class="signature">
+Coded by Adrielle
+</p>
+<button class="back-button" onclick="goBack()">
+< back
+</button>
+</div>
+</div>
+<!-- JAVASCRIPT -->
+<script>
+function openLetter() {
+document.getElementById("firstPage").style.display="none";
+document.getElementById("secondPage").style.display="block";
+}
+function goBack() {
+document.getElementById("secondPage").style.display="none";
+document.getElementById("firstPage").style.display="block";
+}
+</script>
+</body>
+</html>
